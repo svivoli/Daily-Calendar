@@ -1,0 +1,59 @@
+.container {
+    text-align: center;
+}
+
+.frontPage {
+    margin: 25% 0 25% 0;
+    display: inline-block;
+
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 56px;
+}
+
+h4 {
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+.enter {
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+.calendar {
+    display: none;
+}
+
+.time, .note, .add {
+    padding-top: 10px;
+    font-size: 18px;
+    border: solid 1px darkgray;
+    border-right: none;
+    border-bottom: none;
+}
+
+.time:last-of-type {
+    border-bottom: solid 1px darkgray;
+}
+
+
+.time {
+    width: 15%;
+    color: white;
+    background-color: #575757 ;
+}
+
+.note {
+    padding-left: 15px;
+    width: 70%;
+    text-align: left;
+}
+
+.add {
+    width: 15%;
+}
+
+.fas {
+    color: #919191;
+}
