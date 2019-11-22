@@ -29,10 +29,9 @@ h4 {
     font-size: 16px;
     background-color: #575757;
     border-top: solid 1px #dbdbdb;
-    border-left: solid 1px #575757;
+    border-left: none;
     border-right: none;
     border-bottom: none;
-    border-radius: 5px;
 }
 
 .time1 {
@@ -43,21 +42,39 @@ h4 {
     border-bottom: solid 1px darkgray;
 }
 
-.note, .done, .submitDiv {
+.note {
+    width: 70%;
+    height: 75px;
+    padding: 0;
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    border: solid 1px #dbdbdb;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+}
+
+.done  {
+    width: 15%;
     height: 75px;
     padding-top: 10px;
     font-size: 18px;
-    border: solid 1px darkgray;
-    border-right: none;
+    background-color: #13c7d4;
+    border-top: none;
+    border-right: solid 1px #dbdbdb;
     border-bottom: none;
+    border-left: solid 1px #dbdbdb;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
-.note {
-    width: 70%;
-    padding: 5px 5px 5px 5px;
-    color: white;
-    text-align: left;
-    border-left: none;
+.done1 {
+    border-top: solid 1px #dbdbdb;
+}
+
+.done:last-of-type {
+    border-bottom: solid 1px #dbdbdb;
 }
 
 .task {
@@ -75,16 +92,13 @@ h4 {
     resize: none;
 }
 
-.done, .submitDiv {
-    width: 15%;
-}
-
 .fas {
-    color: #919191;
+    color: white;
+    background-color: #13c7d4;
 }
 
 button {
-    background-color: none;
+    background-color: #13c7d4;
     border: hidden;
     padding: 0px;
 }
