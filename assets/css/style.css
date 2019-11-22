@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.frontPage {
+#title {
     margin: 25% 0 25% 0;
     display: inline-block;
 
@@ -17,15 +17,34 @@ h4 {
     font-family: 'Hind Guntur', sans-serif;
 }
 
-.enter {
-    font-family: 'Hind Guntur', sans-serif;
-}
-
 .calendar {
-    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.time, .note, .add {
+.time {
+    width: 15%;
+    padding-top: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: #575757;
+    border-top: solid 1px #dbdbdb;
+    border-left: solid 1px #575757;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 5px;
+}
+
+.time1 {
+    border-top: solid 1px #575757;
+}
+
+.time:last-of-type {
+    border-bottom: solid 1px darkgray;
+}
+
+.note, .done, .submitDiv {
+    height: 75px;
     padding-top: 10px;
     font-size: 18px;
     border: solid 1px darkgray;
@@ -33,27 +52,39 @@ h4 {
     border-bottom: none;
 }
 
-.time:last-of-type {
-    border-bottom: solid 1px darkgray;
-}
-
-
-.time {
-    width: 15%;
-    color: white;
-    background-color: #575757 ;
-}
-
 .note {
-    padding-left: 15px;
     width: 70%;
+    padding: 5px 5px 5px 5px;
+    color: white;
     text-align: left;
+    border-left: none;
 }
 
-.add {
+.task {
+    height: 100%;
+    width: 100%;
+    padding-left: 5px;
+    border: none;
+    color: black;
+    font-size: 16px;
+
+}
+
+.form {
+    box-sizing: border-box;
+    resize: none;
+}
+
+.done, .submitDiv {
     width: 15%;
 }
 
 .fas {
     color: #919191;
+}
+
+button {
+    background-color: none;
+    border: hidden;
+    padding: 0px;
 }
