@@ -8,7 +8,7 @@ var enter = $("#enter");
 var calendar = $(".calendar");
 var dateDiv = $("calDate");
 
-var calDivs = $(".calDivs");
+var calRows = $(".calRows");
 var timeDiv = $(".time");
 var note = $(".note");
 var taskForms = $(".task");
@@ -30,7 +30,7 @@ var form4 = $("#form4");
 var input5 = $("#task5");
 var form5 = $("#form5");
 
-calendar.html("<h4>" + date + "<h4>" + calDivs.html());
+calendar.html("<h4>" + date + "<h4>" + calRows.html());
 
 var notes = {
    note10: {
@@ -89,7 +89,11 @@ forms.on("submit", function (event) {
 var add10 = $(".addBttn10");
 var input10 = $("#task10");
 
-
+add10.on("click", function(event) {
+   event.preventDefault();
+   localStorage.setItem("task10", input10.value);
+   console.log(localStorage.getItem("task10"));
+})
 
 
 ////////////////////////////////
@@ -105,60 +109,60 @@ hour = 14;
 
 function setTasks() {
    if (notes.note10.time < hour) {
-      $('input[name=task10]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task10]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note10.time > hour) {
-      $('input[name=task10]').attr("style", "background-color: #8ceac9");
+      $('input[name=task10]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task10]').attr("style", "background-color: #e6476f");
+      $('input[name=task10]').attr("style", "background-color: #d3685b");
    }
    if (notes.note11.time < hour) {
-      $('input[name=task11]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task11]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note11.time > hour) {
-      $('input[name=task11]').attr("style", "background-color: #8ceac9");
+      $('input[name=task11]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task11]').attr("style", "background-color: #e6476f");
+      $('input[name=task11]').attr("style", "background-color: #d3685b");
    }
    if (notes.note12.time < hour) {
-      $('input[name=task12]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task12]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note12.time > hour) {
-      $('input[name=task12]').attr("style", "background-color: #8ceac9");
+      $('input[name=task12]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task12]').attr("style", "background-color: #e6476f");
+      $('input[name=task12]').attr("style", "background-color: #d3685b");
    }
    if (notes.note1.time < hour) {
-      $('input[name=task1]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task1]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note1.time > hour) {
-      $('input[name=task1]').attr("style", "background-color: #8ceac9");
+      $('input[name=task1]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task1]').attr("style", "background-color: #e6476f");
+      $('input[name=task1]').attr("style", "background-color: #d3685b");
    }
    if (notes.note2.time < hour) {
-      $('input[name=task2]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task2]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note2.time > hour) {
-      $('input[name=task2]').attr("style", "background-color: #8ceac9");
+      $('input[name=task2]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task2]').attr("style", "background-color: #e6476f");
+      $('input[name=task2]').attr("style", "background-color: #d3685b");
    }
    if (notes.note3.time < hour) {
-      $('input[name=task3]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task3]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note3.time > hour) {
-      $('input[name=task3]').attr("style", "background-color: #8ceac9");
+      $('input[name=task3]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task3]').attr("style", "background-color: #e6476f");
+      $('input[name=task3]').attr("style", "background-color: #d3685b");
    }
    if (notes.note4.time < hour) {
-      $('input[name=task4]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task4]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note4.time > hour) {
-      $('input[name=task4]').attr("style", "background-color: #8ceac9");
+      $('input[name=task4]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task4]').attr("style", "background-color: #e6476f");
+      $('input[name=task4]').attr("style", "background-color: #d3685b");
    }
    if (notes.note5.time < hour) {
-      $('input[name=task5]').attr("style", "background-color: #c7c7c7");
+      $('input[name=task5]').attr("style", "background-color: #b4aeb5");
    } else if (notes.note5.time > hour) {
-      $('input[name=task5]').attr("style", "background-color: #8ceac9");
+      $('input[name=task5]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task5]').attr("style", "background-color: #e6476f");
+      $('input[name=task5]').attr("style", "background-color: #d3685b");
    }
 }
 setTasks();
@@ -167,82 +171,82 @@ setTasks();
 
 function changeTask10() {
    if (notes.note10.time < hour) {
-      $('input[name=task10]').attr("style", "background-color: #8669d6");
+      $('input[name=task10]').attr("style", "background-color: #a164a1");
    } else if (notes.note10.time > hour) {
-      $('input[name=task10]').attr("style", "background-color: #8ceac9");
+      $('input[name=task10]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task10]').attr("style", "background-color: #e6476f");
+      $('input[name=task10]').attr("style", "background-color: #d3685b");
    }
 }
 
 
 function changeTask11() {
    if (notes.note11.time < hour) {
-      $('input[name=task11]').attr("style", "background-color: #8669d6");
+      $('input[name=task11]').attr("style", "background-color: #a164a1");
    } else if (notes.note11.time > hour) {
-      $('input[name=task11]').attr("style", "background-color: #8ceac9");
+      $('input[name=task11]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task11]').attr("style", "background-color: #e6476f");
+      $('input[name=task11]').attr("style", "background-color: #d3685b");
    }
 }
 
 function changeTask12() {
    if (notes.note12.time < hour) {
-      $('input[name=task12]').attr("style", "background-color: #8669d6");
+      $('input[name=task12]').attr("style", "background-color: #a164a1");
    } else if (notes.note12.time > hour) {
-      $('input[name=task12]').attr("style", "background-color: #8ceac9");
+      $('input[name=task12]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task12]').attr("style", "background-color: #e6476f");
+      $('input[name=task12]').attr("style", "background-color: #d3685b");
    }
 }
 
 function changeTask1() {
    if (notes.note1.time < hour) {
-      $('input[name=task1]').attr("style", "background-color: #8669d6");
+      $('input[name=task1]').attr("style", "background-color: #a164a1");
    } else if (notes.note1.time > hour) {
-      $('input[name=task1]').attr("style", "background-color: #8ceac9");
+      $('input[name=task1]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task1]').attr("style", "background-color: #e6476f");
+      $('input[name=task1]').attr("style", "background-color: #d3685b");
    }
 }
 
 function changeTask2() {
    if (notes.note2.time < hour) {
-      $('input[name=task2]').attr("style", "background-color: #8669d6");
+      $('input[name=task2]').attr("style", "background-color: #a164a1");
    } else if (notes.note2.time > hour) {
-      $('input[name=task2]').attr("style", "background-color: #8ceac9");
+      $('input[name=task2]').attr("style", "background-color: #9bd1be");
    } else {
-      $('input[name=task2]').attr("style", "background-color: #e6476f");
+      $('input[name=task2]').attr("style", "background-color: #d3685b");
    }
 }
 
 function changeTask3() {
    if (notes.note3.time < hour) {
-      $('input[name=task3]').attr("style", "background-color: #8669d6");
+      $('input[name=task3]').attr("style", "background-color: #a164a1");
    } else if (notes.note3.time > hour) {
-      $('input[name=task3]').attr("style", "background-color: #8ceac9");
+      $('input[name=task3]').attr("style", "background-color: #9bd1be");
    } else if (notes.note3.time = hour) {
-      $('input[name=task3]').attr("style", "background-color: #e6476f");
+      $('input[name=task3]').attr("style", "background-color: #d3685b");
    }
 }
 
 function changeTask4() {
    if (notes.note4.time < hour) {
-      $('input[name=task4]').attr("style", "background-color: #8669d6");
+      $('input[name=task4]').attr("style", "background-color: #a164a1");
    } else if (notes.note4.time > hour) {
-      $('input[name=task4]').attr("style", "background-color: #8ceac9");
+      $('input[name=task4]').attr("style", "background-color: #9bd1be");
    } else if (notes.note4.time = hour) {
-      $('input[name=task4]').attr("style", "background-color: #e6476f");
+      $('input[name=task4]').attr("style", "background-color: #d3685b");
    }
 }
 
 function changeTask5() {
    if (notes.note5.time < hour) {
-      $('input[name=task5]').attr("style", "background-color: #8669d6");
+      $('input[name=task5]').attr("style", "background-color: #a164a1");
    } else if (notes.note5.time > hour) {
-      $('input[name=task5]').attr("style", "background-color: #8ceac9");
+      $('input[name=task5]').attr("style", "background-color: #9bd1be");
    } else if (notes.note5.time = hour) {
-      $('input[name=task5]').attr("style", "background-color: #e6476f");
+      $('input[name=task5]').attr("style", "background-color: #d3685b");
    }
 }
 
@@ -311,35 +315,35 @@ function clearTask5() {
 // change color of tasks WITH CHECK BUTTON to indicate completion
 
 function complete10() {
-   $('input[name=task10]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task10]').attr("style", "background-color: #b4aeb5");
 }
 
 function complete11() {
-   $('input[name=task11]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task11]').attr("style", "background-color: #b4aeb5");
 }
 
 function complete12() {
-   $('input[name=task12]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task12]').attr("style", "background-color: #b4aeb5");
 }
 
 function complete1() {
-   $('input[name=task1]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task1]').attr("style", "background-color: #b4aeb5");
 }
 
 function complete2() {
-   $('input[name=task2]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task2]').attr("style", "background-color: #b4aeb5");
 }
 
 function complete3() {
-   $('input[name=task3]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task3]').attr("style", "background-color: #b4aeb5");
 }
 
 function complete4() {
-   $('input[name=task4]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task4]').attr("style", "background-color: #b4aeb5");
 }
 
 function complete5() {
-   $('input[name=task5]').attr("style", "background-color: #c7c7c7");
+   $('input[name=task5]').attr("style", "background-color: #b4aeb5");
 }
 
 // }

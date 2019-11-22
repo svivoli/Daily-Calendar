@@ -1,3 +1,8 @@
+body {
+    background-size: 2400px;
+    background-image: url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/mountains.jpg);
+}
+
 .container {
     text-align: center;
 }
@@ -27,16 +32,16 @@ h4 {
     padding-top: 10px;
     color: white;
     font-size: 16px;
-    background-color: #575757;
+    background-color: none;
     border-top: solid 1px #dbdbdb;
     border-left: none;
     border-right: none;
     border-bottom: none;
 }
 
-.time1 {
+/* .time1 {
     border-top: solid 1px #575757;
-}
+} */
 
 .time:last-of-type {
     border-bottom: solid 1px darkgray;
@@ -60,7 +65,7 @@ h4 {
     height: 75px;
     padding-top: 10px;
     font-size: 18px;
-    background-color: #13c7d4;
+    background-color: #4b5f96;
     border-top: none;
     border-right: solid 1px #dbdbdb;
     border-bottom: none;
@@ -77,7 +82,7 @@ h4 {
     border-bottom: solid 1px #dbdbdb;
 }
 
-.task {
+.task, .task10 {
     height: 100%;
     width: 100%;
     padding-left: 5px;
@@ -94,11 +99,11 @@ h4 {
 
 .fas {
     color: white;
-    background-color: #13c7d4;
+    background-color: #4b5f96;
 }
 
 button {
-    background-color: #13c7d4;
+    background-color: #4b5f96;
     border: hidden;
     padding: 0px;
 }
