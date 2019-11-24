@@ -8,7 +8,7 @@ Components:
 1. "Your Planner" h1 title
 2. Updated h4 date and time 
 3. Container div, title div, planner div, planner date div, planner rows div (named with "calendar" instead of planner)
-4. Planner page generated with jQuery, pulled from html document
+4. Planner generated with jQuery, pulled from html document
     - Updated date and time
     - Per hour rows containing: 
         * Time (10am-5pm) div
