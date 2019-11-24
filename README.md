@@ -43,7 +43,7 @@ There are three icons availble to the user in blue divs to the right of each not
 
 ![Clear Button](https://i.imgur.com/eO2806b.png)
 
-The third button, an x, changes any colored note to white.
+The third button, an x, changes any colored note to white and clears the text.
 
 ### Developer Experience
 
