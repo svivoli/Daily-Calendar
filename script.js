@@ -190,6 +190,11 @@ function getInput5() {
 var today = new Date();
 var hour = today.getHours();
 
+function clearStorage() {
+   if (hour = 0) {
+      localStorage.clear();
+   }
+}
 
 // set task colors
 

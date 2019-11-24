@@ -31,15 +31,15 @@ https://svivoli.github.io/Daily-Calendar/index.html
 
 ![Title](https://i.imgur.com/FivZxzR.jpg)
 
-The user is greeted with the title "Your Calender" and the current date and time displayed, their daily calendar found below. Unless the user has already stored notes and tasks in the calendar, it will appear blank. The three colors indicate that a note is past the hour (grey), the current hour (red), or a future hour (green).
+The user is greeted with the title "Your Calender", the current date and time is displayed, and an arrow indicates that the calendar can be found once they scroll down. 
 
 ![Calendar](https://i.imgur.com/pINuikB.jpg)
 
-There are three icons availble to the user in blue divs to the right of each note. The first button, a plus sign has two functions. It will change a past, grey note to purple to indicate that a user has inputted a note, and it stores inputted data for any note to localStorage so that when the user refreshes the page their inputs will remain. At midnight, the user inputs are set to be cleared. 
+Unless the user has already stored notes and tasks in the calendar, it will appear blank. There are  three colors to indicate that a note is past the hour (grey), the current hour (red), or a future hour (green).
 
 ![Add Button](https://i.imgur.com/mnZqu5n.png)
 
-The second button, the check mark, changes the color of the note to grey, allowing the user to indicate that they have completed a task, or possibly that it is of lesser importance. 
+There are three icons availble to the user in blue divs to the right of each note. The first button, a plus sign has two functions. It will change a past, grey note to a fourth color, purple, to indicate that a user has inputted a note into a past time slot, and it also stores inputted data for any note to localStorage so that when the user refreshes the page their inputs will remain. At midnight, the user inputs are set to be cleared. The second button, the check mark, changes the color of the note to grey, allowing the user to indicate that they have completed a task, or possibly that it is of lesser importance. 
 
 ![Clear Button](https://i.imgur.com/eO2806b.png)
 
