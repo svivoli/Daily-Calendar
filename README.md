@@ -31,7 +31,7 @@ https://svivoli.github.io/Daily-Calendar/index.html
 
 ![Title](https://i.imgur.com/FivZxzR.jpg)
 
-The user is greeted with the title "Your Calender", the current date and time is displayed, and an arrow indicates that the calendar can be found once they scroll down. 
+The user is greeted with the title "Your Calender", the current date and time, and an arrow indicating that the calendar is found further down the page. 
 
 ![Calendar](https://i.imgur.com/pINuikB.jpg)
 
@@ -43,7 +43,7 @@ There are three icons availble to the user in blue divs to the right of each not
 
 ![Clear Button](https://i.imgur.com/eO2806b.png)
 
-The third button, an x, clears any colored note to white.
+The third button, an x, changes any colored note to white.
 
 ### Developer Experience
 
@@ -51,7 +51,7 @@ Cumbersome code:
 
 - Long, repetitive
 - Was not able to use the same block of code for each button
-- jQuery onclick events were not working - resulting mix of javascript and jQuery
+- jQuery onclick events were not working - awkward mix of javascript and jQuery
 - Would not fair well for a longer, multi-day/multi-week calendar, which is much more functional
 
 Unresolved Errors:
@@ -61,7 +61,7 @@ Unresolved Errors:
 - Ideally, the clear button would also clear the text content of the input
 
 
-I felt a little restrained by this project. I would have liked to be able to make the plus button append a list item to the note divs so that the user could enter multiple tasks per time slot. However, this proved to be a daunting task, as I was faced with creating multiple, repetitive functions as it was.  On top of that, it would have been very complicated to manipulate the color of each task within the list if I had done it that way. Another project to circle back to once I develop my skillset further!
+I felt a little restrained by this project. I would have liked to be able to make the plus button append a list item to the note divs so that the user could enter multiple tasks per time slot. However, this proved to be a daunting task, as I was faced with creating multiple, repetitive functions as it was.  On top of that, it would have been very complicated to manipulate the color of each task within the list if I had done it that way. I also wish I could have succeeded in making my code much, much more concise. Another project to circle back to once I develop my skillset further!
 
 --Sarah Vivoli
 
