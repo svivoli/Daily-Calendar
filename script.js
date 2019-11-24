@@ -87,6 +87,7 @@ add10.on("click", function (event) {
    var noteInput10 = $("#task10");
    localStorage.setItem("inputted10", noteInput10.val());
    getInput10();
+   changeTask10();
 });
 
 add11.on("click", function (event) {
@@ -94,6 +95,7 @@ add11.on("click", function (event) {
    var noteInput11 = $("#task11");
    localStorage.setItem("inputted11", noteInput11.val());
    getInput11();
+   changeTask11();
 });
 
 add12.on("click", function (event) {
@@ -101,6 +103,7 @@ add12.on("click", function (event) {
    var noteInput12 = $("#task12");
    localStorage.setItem("inputted12", noteInput12.val());
    getInput12();
+   changeTask12();
 });
 
 add1.on("click", function (event) {
@@ -108,6 +111,7 @@ add1.on("click", function (event) {
    var noteInput1 = $("#task1");
    localStorage.setItem("inputted1", noteInput1.val());
    getInput1();
+   changeTask1();
 });
 
 add2.on("click", function (event) {
@@ -115,6 +119,7 @@ add2.on("click", function (event) {
    var noteInput2 = $("#task2");
    localStorage.setItem("inputted2", noteInput2.val());
    getInput2();
+   changeTask2();
 });
 
 add3.on("click", function (event) {
@@ -122,6 +127,7 @@ add3.on("click", function (event) {
    var noteInput3 = $("#task3");
    localStorage.setItem("inputted3", noteInput3.val());
    getInput3();
+   changeTask3();
 });
 
 add4.on("click", function (event) {
@@ -129,6 +135,7 @@ add4.on("click", function (event) {
    var noteInput4 = $("#task4");
    localStorage.setItem("inputted4", noteInput4.val());
    getInput4();
+   changeTask4();
 });
 
 add5.on("click", function (event) {
@@ -136,6 +143,7 @@ add5.on("click", function (event) {
    var noteInput5 = $("#task5");
    localStorage.setItem("inputted5", noteInput5.val());
    getInput5();
+   changeTask5();
 });
 
 getInput10();
@@ -189,6 +197,8 @@ function getInput5() {
 
 var today = new Date();
 var hour = today.getHours();
+
+hour = 14;
 
 function clearStorage() {
    if (hour = 0) {
@@ -341,8 +351,41 @@ function changeTask5() {
    }
 }
 
+// change color of tasks with check button to indicate completion
 
-// clear task WITH BUTTON
+function complete10() {
+   $('input[name=task10]').attr("style", "background-color: #b4aeb5");
+}
+
+function complete11() {
+   $('input[name=task11]').attr("style", "background-color: #b4aeb5");
+}
+
+function complete12() {
+   $('input[name=task12]').attr("style", "background-color: #b4aeb5");
+}
+
+function complete1() {
+   $('input[name=task1]').attr("style", "background-color: #b4aeb5");
+}
+
+function complete2() {
+   $('input[name=task2]').attr("style", "background-color: #b4aeb5");
+}
+
+function complete3() {
+   $('input[name=task3]').attr("style", "background-color: #b4aeb5");
+}
+
+function complete4() {
+   $('input[name=task4]').attr("style", "background-color: #b4aeb5");
+}
+
+function complete5() {
+   $('input[name=task5]').attr("style", "background-color: #b4aeb5");
+}
+
+// clear task with x button
 
 
 function clearTask10() {
@@ -375,41 +418,6 @@ function clearTask4() {
 
 function clearTask5() {
    $('input[name=task5]').attr("style", "background-color: white");
-}
-
-
-// change color of tasks WITH CHECK BUTTON to indicate completion
-
-function complete10() {
-   $('input[name=task10]').attr("style", "background-color: #b4aeb5");
-}
-
-function complete11() {
-   $('input[name=task11]').attr("style", "background-color: #b4aeb5");
-}
-
-function complete12() {
-   $('input[name=task12]').attr("style", "background-color: #b4aeb5");
-}
-
-function complete1() {
-   $('input[name=task1]').attr("style", "background-color: #b4aeb5");
-}
-
-function complete2() {
-   $('input[name=task2]').attr("style", "background-color: #b4aeb5");
-}
-
-function complete3() {
-   $('input[name=task3]').attr("style", "background-color: #b4aeb5");
-}
-
-function complete4() {
-   $('input[name=task4]').attr("style", "background-color: #b4aeb5");
-}
-
-function complete5() {
-   $('input[name=task5]').attr("style", "background-color: #b4aeb5");
 }
 
 // }
