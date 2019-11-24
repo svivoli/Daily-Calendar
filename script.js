@@ -23,50 +23,40 @@ var input3 = $("#task3");
 var input4 = $("#task4");
 var input5 = $("#task5");
 
-var form10 = $("#form10");
-var form11 = $("#form11");
-var form12 = $("#form12");
-var form1 = $("#form1");
-var form2 = $("#form2");
-var form3 = $("#form3");
-var form4 = $("#form4");
-var form5 = $("#form5");
-
 calendar.html("<h4>" + date + "<h4>" + calRows.html());
-
 
 var notes = {
    note10: {
-      task: input10.value,
+      task: input10,
       time: 10,
    },
    note11: {
-      task: input11.value,
+      task: input11,
       time: 11,
    },
    note12: {
-      task: input12.value,
+      task: input12,
       time: 12,
    },
    note1: {
-      task: input1.value,
+      task: input1,
       time: 13,
    },
    note2: {
-      task: input2.value,
+      task: input2,
       time: 14,
    },
    note3: {
-      task: input3.value,
+      task: input3,
       time: 15,
 
    },
    note4: {
-      task: input4.value,
+      task: input4,
       time: 16,
    },
    note5: {
-      task: input5.value,
+      task: input5,
       time: 17,
    },
 };
@@ -81,7 +71,6 @@ var add2 = $(".addBttn2");
 var add3 = $(".addBttn3");
 var add4 = $(".addBttn4");
 var add5 = $(".addBttn5");
-
 
 add10.on("click", function (event) {
    event.preventDefault();
@@ -281,7 +270,6 @@ function changeTask10() {
    }
 }
 
-
 function changeTask11() {
    if (notes.note11.time < hour) {
       $('input[name=task11]').attr("style", "background-color: #a164a1");
@@ -388,7 +376,6 @@ function complete5() {
 
 // clear task with x button
 
-
 function clearTask10() {
    $('input[name=task10]').attr("style", "background-color: white");
    var blank = "";
@@ -460,8 +447,3 @@ function clearTask5() {
    $("#task5").val(getBlank5);
    localStorage.removeItem("inputted5");
 }
-
-
-
-
-// }
