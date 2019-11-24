@@ -451,8 +451,8 @@ function clearTask5() {
    $('input[name=task5]').attr("style", "background-color: white");
    var blank = "";
    localStorage.setItem("blank", blank);
-   getBlank4 = localStorage.getItem("blank");
-   $("#task4").val(getBlank4);
+   getBlank5 = localStorage.getItem("blank");
+   $("#task5").val(getBlank5);
 }
 
 // }
