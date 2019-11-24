@@ -199,8 +199,6 @@ function getInput5() {
 var today = new Date();
 var hour = today.getHours();
 
-hour = 14;
-
 // clear inputs at 12 am
 
 function clearStorage() {
