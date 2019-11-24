@@ -34,6 +34,7 @@ var form5 = $("#form5");
 
 calendar.html("<h4>" + date + "<h4>" + calRows.html());
 
+
 var notes = {
    note10: {
       task: input10.value,
@@ -199,6 +200,8 @@ var today = new Date();
 var hour = today.getHours();
 
 hour = 14;
+
+// clear inputs at 12 am
 
 function clearStorage() {
    if (hour = 0) {
