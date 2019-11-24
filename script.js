@@ -397,6 +397,7 @@ function clearTask10() {
    localStorage.setItem("blank", blank);
    getBlank10 = localStorage.getItem("blank");
    $("#task10").val(getBlank10);
+   localStorage.removeItem("inputted10");
 }
 
 function clearTask11() {
@@ -405,6 +406,7 @@ function clearTask11() {
    localStorage.setItem("blank", blank);
    getBlank11 = localStorage.getItem("blank");
    $("#task11").val(getBlank11);
+   localStorage.removeItem("inputted11");
 }
 
 function clearTask12() {
@@ -413,6 +415,7 @@ function clearTask12() {
    localStorage.setItem("blank", blank);
    getBlank12 = localStorage.getItem("blank");
    $("#task12").val(getBlank12);
+   localStorage.removeItem("inputted12");
 }
 
 function clearTask1() {
@@ -421,6 +424,7 @@ function clearTask1() {
    localStorage.setItem("blank", blank);
    getBlank1 = localStorage.getItem("blank");
    $("#task1").val(getBlank1);
+   localStorage.removeItem("inputted1");
 }
 
 function clearTask2() {
@@ -429,6 +433,7 @@ function clearTask2() {
    localStorage.setItem("blank", blank);
    getBlank2 = localStorage.getItem("blank");
    $("#task2").val(getBlank2);
+   localStorage.removeItem("inputted2");
 }
 
 function clearTask3() {
@@ -437,6 +442,7 @@ function clearTask3() {
    localStorage.setItem("blank", blank);
    getBlank3 = localStorage.getItem("blank");
    $("#task3").val(getBlank3);
+   localStorage.removeItem("inputted3");
 }
 
 function clearTask4() {
@@ -445,6 +451,7 @@ function clearTask4() {
    localStorage.setItem("blank", blank);
    getBlank4 = localStorage.getItem("blank");
    $("#task4").val(getBlank4);
+   localStorage.removeItem("inputted4");
 }
 
 function clearTask5() {
@@ -453,6 +460,10 @@ function clearTask5() {
    localStorage.setItem("blank", blank);
    getBlank5 = localStorage.getItem("blank");
    $("#task5").val(getBlank5);
+   localStorage.removeItem("inputted5");
 }
+
+
+
 
 // }

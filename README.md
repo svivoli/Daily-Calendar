@@ -57,6 +57,7 @@ Cumbersome code:
 Unresolved Errors:
 
 - If the user has changed grey divs to purple, they don't remain purple upon refresh
+- If the user has changed divs to white, they don't remain white upon refresh
 
 Summary:
 
