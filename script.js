@@ -393,34 +393,66 @@ function complete5() {
 
 function clearTask10() {
    $('input[name=task10]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank10 = localStorage.getItem("blank");
+   $("#task10").val(getBlank10);
 }
 
 function clearTask11() {
    $('input[name=task11]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank11 = localStorage.getItem("blank");
+   $("#task11").val(getBlank11);
 }
 
 function clearTask12() {
    $('input[name=task12]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank12 = localStorage.getItem("blank");
+   $("#task12").val(getBlank12);
 }
 
 function clearTask1() {
    $('input[name=task1]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank1 = localStorage.getItem("blank");
+   $("#task1").val(getBlank1);
 }
 
 function clearTask2() {
    $('input[name=task2]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank2 = localStorage.getItem("blank");
+   $("#task2").val(getBlank2);
 }
 
 function clearTask3() {
    $('input[name=task3]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank3 = localStorage.getItem("blank");
+   $("#task3").val(getBlank3);
 }
 
 function clearTask4() {
    $('input[name=task4]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank4 = localStorage.getItem("blank");
+   $("#task4").val(getBlank4);
 }
 
 function clearTask5() {
    $('input[name=task5]').attr("style", "background-color: white");
+   var blank = "";
+   localStorage.setItem("blank", blank);
+   getBlank4 = localStorage.getItem("blank");
+   $("#task4").val(getBlank4);
 }
 
 // }

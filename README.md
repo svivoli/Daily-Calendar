@@ -33,7 +33,7 @@ https://svivoli.github.io/Daily-Planner/index.html
 
 The user is greeted with the title "Your Planner", the current date and time, and an arrow indicating that the planner is found further down the page. 
 
-![Planner](https://i.imgur.com/pINuikB.jpg)
+![Planner](https://i.imgur.com/xpivhPm.jpg)
 
 Unless the user has already stored notes and tasks in the planner, it will appear blank. There are  three colors to indicate that a note is past the hour (grey), the current hour (red), or a future hour (green).
 
@@ -56,12 +56,11 @@ Cumbersome code:
 
 Unresolved Errors:
 
-- localStorage only works for the first note
 - If the user has changed grey divs to purple, they don't remain purple upon refresh
-- Ideally, the clear button would also clear the text content of the input
 
+Summary:
 
-I felt a little restrained by this project. I would have liked to be able to make the plus button append a list item to the note divs so that the user could enter multiple tasks per time slot. However, this proved to be a daunting task, as I was faced with creating multiple, repetitive functions as it was.  On top of that, it would have been very complicated to manipulate the color of each task within the list if I had done it that way. I also wish I could have succeeded in making my code much, much more concise. Another project to circle back to once I develop my skillset further!
+I felt a little restrained by this project. I would have liked to be able to make the plus button append a list item to the note divs so that the user could enter multiple tasks per time slot. However, this proved to be a daunting task, as I was faced with creating multiple, repetitive functions as it was.  On top of that, it would have been very complicated to manipulate the color of each task within the list if I had done it that way. I also wish I could have succeeded in making my code much, much more concise, but I was having trouble making loops that could isolate the buttons for each input. Another project to circle back to once I develop my skillset further!
 
 --Sarah Vivoli
 
