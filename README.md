@@ -54,7 +54,7 @@ Cumbersome code:
 - jQuery onclick events were not working - awkward mix of javascript and jQuery
 - Would not fair well for a longer, multi-day/multi-week planner, which is much more functional
 
-Unresolved Errors:
+Unresolved:
 
 - If the user has changed grey divs to purple, they don't remain purple upon refresh
 - If the user has changed divs to white, they don't remain white upon refresh
