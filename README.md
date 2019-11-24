@@ -1,14 +1,14 @@
-# Daily Calendar
+# Daily Planner
 
 ### Description
 
-The purpose of this project was to create a functional calendar so that a user can organize the important events of their day onto a clear platform and manage their time effectively. This is useful for employees on every rung of a corporate ldoneer, as well as those who are self employed or self motivated. The calendar maintains a simple, sleek structure, consisting of a welcome page that directs to the main calendar with per-half-hour note slots.
+The purpose of this project was to create a functional planner so that a user can organize the important events of their day onto a clear platform and manage their time effectively. This is useful for employees on every rung of a corporate ldoneer, as well as those who are self employed or self motivated. The planner maintains a simple, sleek structure, consisting of a welcome page that directs to the planner with per-half-hour note slots.
 
 Components:
-1. "Your Calendar" h1 title
+1. "Your Planner" h1 title
 2. Updated h4 date and time 
-3. Container div, title div, calendar div, calendar date div, calendar rows div
-4. Calendar page generated with jQuery, pulled from html document
+3. Container div, title div, planner div, planner date div, planner rows div (named with "calendar" instead of planner)
+4. Planner page generated with jQuery, pulled from html document
     - Updated date and time
     - Per hour rows containing: 
         * Time (10am-5pm) div
@@ -24,18 +24,18 @@ Components:
 
 ### Links to Project
 
-https://github.com/svivoli/Daily-Calendar  
-https://svivoli.github.io/Daily-Calendar/index.html
+https://github.com/svivoli/Daily-Planner  
+https://svivoli.github.io/Daily-Planner/index.html
 
 ### User Experience
 
-![Title](https://i.imgur.com/FivZxzR.jpg)
+![Title](https://i.imgur.com/kfs2X35.jpg)
 
-The user is greeted with the title "Your Calender", the current date and time, and an arrow indicating that the calendar is found further down the page. 
+The user is greeted with the title "Your Planner", the current date and time, and an arrow indicating that the planner is found further down the page. 
 
-![Calendar](https://i.imgur.com/pINuikB.jpg)
+![Planner](https://i.imgur.com/pINuikB.jpg)
 
-Unless the user has already stored notes and tasks in the calendar, it will appear blank. There are  three colors to indicate that a note is past the hour (grey), the current hour (red), or a future hour (green).
+Unless the user has already stored notes and tasks in the planner, it will appear blank. There are  three colors to indicate that a note is past the hour (grey), the current hour (red), or a future hour (green).
 
 ![Add Button](https://i.imgur.com/mnZqu5n.png)
 
@@ -52,7 +52,7 @@ Cumbersome code:
 - Long, repetitive
 - Was not able to use the same block of code for each button
 - jQuery onclick events were not working - awkward mix of javascript and jQuery
-- Would not fair well for a longer, multi-day/multi-week calendar, which is much more functional
+- Would not fair well for a longer, multi-day/multi-week planner, which is much more functional
 
 Unresolved Errors:
 
