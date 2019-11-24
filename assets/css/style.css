@@ -39,14 +39,6 @@ h4 {
     border-bottom: none;
 }
 
-/* .time1 {
-    border-top: solid 1px #575757;
-} */
-
-.time:last-of-type {
-    border-bottom: solid 1px darkgray;
-}
-
 .note {
     width: 70%;
     height: 75px;
@@ -58,6 +50,21 @@ h4 {
     border-right: none;
     border-bottom: none;
     border-left: none;
+    overflow: scroll;
+}
+
+.note:last-of-type {
+    border-bottom: solid 1px #dbdbdb;
+}
+
+.task {
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    color: black;
+    font-size: 16px;
 }
 
 .done  {
@@ -80,21 +87,6 @@ h4 {
 
 .done:last-of-type {
     border-bottom: solid 1px #dbdbdb;
-}
-
-.task, .task10 {
-    height: 100%;
-    width: 100%;
-    padding-left: 5px;
-    border: none;
-    color: black;
-    font-size: 16px;
-
-}
-
-.form {
-    box-sizing: border-box;
-    resize: none;
 }
 
 .fas {

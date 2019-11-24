@@ -11,23 +11,25 @@ var dateDiv = $("calDate");
 var calRows = $(".calRows");
 var timeDiv = $(".time");
 var note = $(".note");
-var taskForms = $(".task");
+
+var inputs = $(".task");
 
 var input10 = $("#task10");
-var form10 = $("#form10");
 var input11 = $("#task11");
-var form11 = $("#form11");
 var input12 = $("#task12");
-var form12 = $("#form12");
 var input1 = $("#task1");
-var form1 = $("#form1");
 var input2 = $("#task2");
-var form2 = $("#form2");
 var input3 = $("#task3");
-var form3 = $("#form3");
 var input4 = $("#task4");
-var form4 = $("#form4");
 var input5 = $("#task5");
+
+var form10 = $("#form10");
+var form11 = $("#form11");
+var form12 = $("#form12");
+var form1 = $("#form1");
+var form2 = $("#form2");
+var form3 = $("#form3");
+var form4 = $("#form4");
 var form5 = $("#form5");
 
 calendar.html("<h4>" + date + "<h4>" + calRows.html());
@@ -68,42 +70,126 @@ var notes = {
    },
 };
 
-
-// $(document).ready(function () {
-
-// prevent form from refreshing page on submit, enter text to field
-
-// event.preventDefault();
-// var newTask = localStorage.getItem("input");
-// input10.push(newTask);
-// localStorage.setItem("input", input);
-
-var forms = $("#form");
-
-forms.on("submit", function (event) {
-   event.preventDefault();
-});
-
 // store inputs with + button
 
 var add10 = $(".addBttn10");
-var input10 = $("#task10");
+var add11 = $(".addBttn11");
+var add12 = $(".addBttn12");
+var add1 = $(".addBttn1");
+var add2 = $(".addBttn2");
+var add3 = $(".addBttn3");
+var add4 = $(".addBttn4");
+var add5 = $(".addBttn5");
 
-add10.on("click", function(event) {
+
+add10.on("click", function (event) {
    event.preventDefault();
-   localStorage.setItem("task10", input10.value);
-   console.log(localStorage.getItem("task10"));
-})
+   var noteInput10 = $("#task10");
+   localStorage.setItem("inputted10", noteInput10.val());
+   getInput10();
+});
 
+add11.on("click", function (event) {
+   event.preventDefault();
+   var noteInput11 = $("#task11");
+   localStorage.setItem("inputted11", noteInput11.val());
+   getInput11();
+});
 
-////////////////////////////////
-////// working code below //////
-///////////////////////////////
+add12.on("click", function (event) {
+   event.preventDefault();
+   var noteInput12 = $("#task12");
+   localStorage.setItem("inputted12", noteInput12.val());
+   getInput12();
+});
+
+add1.on("click", function (event) {
+   event.preventDefault();
+   var noteInput1 = $("#task1");
+   localStorage.setItem("inputted1", noteInput1.val());
+   getInput1();
+});
+
+add2.on("click", function (event) {
+   event.preventDefault();
+   var noteInput2 = $("#task2");
+   localStorage.setItem("inputted2", noteInput2.val());
+   getInput2();
+});
+
+add3.on("click", function (event) {
+   event.preventDefault();
+   var noteInput3 = $("#task3");
+   localStorage.setItem("inputted3", noteInput3.val());
+   getInput3();
+});
+
+add4.on("click", function (event) {
+   event.preventDefault();
+   var noteInput4 = $("#task4");
+   localStorage.setItem("inputted4", noteInput4.val());
+   getInput4();
+});
+
+add5.on("click", function (event) {
+   event.preventDefault();
+   var noteInput5 = $("#task5");
+   localStorage.setItem("inputted5", noteInput5.val());
+   getInput5();
+});
+
+getInput10();
+getInput11();
+getInput12();
+getInput1();
+getInput2();
+getInput3();
+getInput4();
+getInput5();
+
+function getInput10() {
+   var savedInput10 = localStorage.getItem("inputted10");
+   $("#task10").val(savedInput10);
+}
+
+function getInput11() {
+    var savedInput11 = localStorage.getItem("inputted11");
+    $("#task11").val(savedInput11);
+}
+
+function getInput12() {
+    var savedInput12 = localStorage.getItem("inputted12");
+    $("#task12").val(savedInput12);
+}
+
+function getInput1() {
+    var savedInput1 = localStorage.getItem("inputted1");
+    $("#task1").val(savedInput1);
+}
+
+function getInput2() {
+    var savedInput2 = localStorage.getItem("inputted2");
+    $("#task2").val(savedInput2);
+}
+
+function getInput3() {
+    var savedInput3 = localStorage.getItem("inputted3");
+    $("#task3").val(savedInput3);
+}
+
+function getInput4() {
+    var savedInput4 = localStorage.getItem("inputted4");
+    $("#task4").val(savedInput4);
+}
+
+function getInput5() {
+    var savedInput5 = localStorage.getItem("inputted5");
+    $("#task5").val(savedInput5);
+}
 
 var today = new Date();
 var hour = today.getHours();
 
-hour = 14;
 
 // set task colors
 
@@ -253,62 +339,37 @@ function changeTask5() {
 
 // clear task WITH BUTTON
 
-var blank = "";
 
 function clearTask10() {
    $('input[name=task10]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input10.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 function clearTask11() {
    $('input[name=task11]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input11.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 function clearTask12() {
    $('input[name=task12]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input12.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 function clearTask1() {
    $('input[name=task1]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input1.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 function clearTask2() {
    $('input[name=task2]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input2.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 function clearTask3() {
    $('input[name=task3]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input3.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 function clearTask4() {
    $('input[name=task4]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input4.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 function clearTask5() {
    $('input[name=task5]').attr("style", "background-color: white");
-   var newTask = localStorage.getItem("blank");
-   input5.push(newTask);
-   localStorage.setItem("blank", blank);
 }
 
 
