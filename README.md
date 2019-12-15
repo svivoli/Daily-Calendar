@@ -25,7 +25,7 @@ Components:
 ### Links to Project
 
 https://github.com/svivoli/Daily-Planner  
-https://svivoli.github.io/Daily-Planner/index.html
+https://svivoli.github.io/Daily-Planner/
 
 ### User Experience
 
