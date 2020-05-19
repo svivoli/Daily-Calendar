@@ -1,12 +1,17 @@
 # Daily Planner
 
+### Links to Project
+
+https://github.com/svivoli/Daily-Planner  
+https://svivoli.github.io/Daily-Planner/
+
 ### Description
 
-The purpose of this project was to create a functional planner so that a user can organize the important events of their day onto a clear platform and manage their time effectively. This is useful for employees on every rung of a corporate ldoneer, as well as those who are self employed or self motivated. The planner maintains a simple, sleek structure, consisting of a welcome page that directs to the planner with per-half-hour note slots.
+The purpose of this project was to create a functional planner so that a user can organize the important events of their day onto a clear platform and manage their time effectively. This is useful for employees on every rung of a corporate ladder, as well as those who are self employed or self motivated. Displayed below a colorful welcome page, the planner maintains a simple, sleek structure.
 
 Components:
-1. "Your Planner" h1 title
-2. Updated h4 date and time 
+1. "Your Planner" title
+2. Current date and time title
 3. Container div, title div, planner div, planner date div, planner rows div (named with "calendar" instead of planner)
 4. Planner generated with jQuery, pulled from html document
     - Updated date and time
@@ -21,11 +26,6 @@ Components:
 8. Fontawesome Icons
 9. Colors, Borders
 10. Super cool background image
-
-### Links to Project
-
-https://github.com/svivoli/Daily-Planner  
-https://svivoli.github.io/Daily-Planner/
 
 ### User Experience
 
